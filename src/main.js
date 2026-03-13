@@ -32,7 +32,14 @@ userForm.addEventListener('submit', e => {
       }
       createGallery(data.hits);
     })
-    .catch(error => console.log(error))
+    .catch(error => {
+      iziToast.show({
+        message: 'Something went wrong. Please try again later.',
+        position: 'topRight',
+        backgroundColor: '#ef4040',
+        messageColor: 'white',
+      });
+    })
     .finally(() => {
       hideLoader();
     });
