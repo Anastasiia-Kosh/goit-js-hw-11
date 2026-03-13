@@ -8,11 +8,36 @@
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
-@import url('./animations.css');
-
+@import url('./loader.css');
 /* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+.form {
+  margin: 0 auto;
+}
+.gallery {
+  padding: 24px 36px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.gallery-item {
+  display: block;
+  width: 280px;
+  cursor: pointer;
+  border: 1px solid black;
+}
+.gallery-image {
+  width: 360px;
+  height: 150px;
+}
+.gallery-description {
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.gallery-description p {
+  text-align: center;
+}
